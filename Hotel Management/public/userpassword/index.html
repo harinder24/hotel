@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <title>Change Password</title>
+    <style>
+          #box {
+            box-sizing: border-box;
+            width: 50%;
+            padding: 25px 25px 25px 10px;
+            border-radius: 25px;
+            background-color: rgb(255, 255, 255);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            text-align: center;
+    
+        }
+        * {
+            box-sizing: border-box;
+
+        }
+        .border{
+            border: 2px solid black;
+        }
+        .clear{
+            clear: both;
+            width: 100%;
+        }
+        body {
+            font-family: 'Didact Gothic';
+            background-color:#b64747;
+        }
+
+        #btn1{
+        width: 100%;
+        padding: 10px 10px;
+        background-color: #8b0404;
+        cursor: pointer;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 13px
+        }
+
+        #btn2{
+        width: 100%;
+        padding: 10px 10px;
+        background-color:#8b0404;
+        cursor: pointer;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 13px
+        }
+
+        
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(243, 183, 183);
+    color: rgb(105, 4, 4);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    }
+
+
+    .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(243, 183, 183) transparent transparent transparent;
+    }
+
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.close{
+  visibility:collapse;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+a:link{
+        text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+        
+
+    <div id="box">
+        <div style="padding-bottom: 30px;">
+            <h1>Password Recovery</h1>
+            <p>Type email address to get access code first</p>
+            <div>Email</div>
+            <input type="email" id = "#emailRecovery">   
+        </div>
+        <div style="padding-bottom: 30px;">
+            <div class="popup"><button id="btn1">Get access code</button>
+                <span class="popuptext" id="myPopup" ></span>
+
+        <br>
+        <br>
+
+        </div>
+        <div style="padding-bottom: 30px;">
+            <div>Access Code</div>
+            <input type="text" id = "#accessCode">   
+        </div>
+        <div style="padding-bottom: 30px;">
+            <div>New Password</div>
+            <input type="password" id = "#newPass">   
+        </div>
+        <div style="padding-bottom: 30px;">
+            <div>Confirm New Password</div>
+            <input type="password" id = "#confirmNewPass">   
+        </div>
+        <div style="padding-bottom: 30px;">
+          <div class="popup"><button id="btn2">Change Password</button>
+            <span class="popuptext" id="myPopup2" ></span>
+
+          </div>
+        </div>
+
+        <a style="color: #8b0404;" href="/ciroc/userlogin">Login Page</a>
+        
+    </div>
+    
+
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

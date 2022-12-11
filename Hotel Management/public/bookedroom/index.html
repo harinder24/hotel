@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room</title>
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> -->
+    <style>
+        h1 {
+        text-align: center;
+        color:rgb(8, 75, 60);
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    nav {
+
+            background-color: rgb(148, 9, 9);
+            display: flex;
+            justify-content: space-between;
+            
+    
+     }
+    nav a {
+            display: inline-block;
+            padding: 10px;
+
+            color: #f2f2f2;
+            text-decoration: none;
+
+            padding: 14px 16px;
+            text-align: center;
+    }
+
+    nav a:hover {
+            background-color: rgb(245, 214, 214);
+            color: rgb(0, 0, 0);
+        }
+        
+    .dummy_div{
+    display: flex;
+   }
+   .left {
+        display: flex;
+
+    }
+    .name{
+        color: rgb(204, 122, 122);
+        text-align: left;
+        font-family: 'Didact Gothic';
+        font-weight: bold;
+        font-size: 30px;
+    }
+    body{
+        background-color: rgb(245, 214, 214);
+        margin: 0%;
+        font-family: 'Didact Gothic';
+
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+    .but {
+        width: 10%;
+        padding: 20px 20px;
+        background-color: #8b0404;
+        cursor: pointer;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 20px
+    }
+    .p {
+        font-family:'Didact Gothic';
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="dummy_div">
+        <div class= "name" >Hotel Ciroc </div>
+        </div>
+        <div class="left">
+        <a href="/ciroc/user/bookroom" style="float:right;">Book Rooms</a>
+        <a href="/ciroc/user" style="float:right;">Home</a>
+        </div>
+
+    </nav>
+
+    <div id="output" style="text-align: center; padding-top: 40px;">
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="client.js"></script>
+</body>
+</body>
+</html>
