@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
+
     <title>Employee</title>
 
     <style>
@@ -12,7 +14,10 @@
             padding: 5px;
         }
 
-        /* ======HEADER BOX======== */
+        .fontFam {
+            font-family: 'Didact Gothic';
+        }
+
         #topBox { 
             background-color: #ada397;
             overflow: hidden;
@@ -31,8 +36,6 @@
             background-color: #f1f1f1;
             color: #333;
         }
-        /* ======END OF HEADER BOX======== */
-
 
         #leftBox {
             display: block;
@@ -68,8 +71,6 @@
             padding-left: 15px;
         }
 
-        /* ======BUTTON CSS======== */
-
         .buttonA {
             background-color: #fbeee0;
             border: 2px solid #422800;
@@ -99,51 +100,63 @@
                 padding: 0 25px;
             }
         }
-        /* ======END BUTTON CSS======== */
-        
 
+        #footer {
+            clear: both;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <h1 style="text-align: center; font-family: Snell Roundhand, cursive;">Ciroc Hotel</h1>
 
-    <h4 style="text-align: center;">Hotel life is the simplest, yet the best.</h4>
+    <div class="fontFam">
 
-    <div id="topBox">
-        <a href="/ciroc/employee/training">Training Videos</a>
-        <a href="/ciroc">Home Page</a>
+        <h4 style="text-align: center;">Hotel life is the simplest, yet the best.</h4>
 
-    </div>
 
-    <div id="leftBox">
-        <a href="https://images.unsplash.com/photo-1554396133-3ff490ac1c6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"><img src="https://images.unsplash.com/photo-1554396133-3ff490ac1c6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" alt="" width="400px" class="center"></a>
-
-        <hr>
-
-        <p><b>Name: <span id="#eName"></span></b></p>
-        <p><b>Email: <span id="#eEmail"></span></b></p>
-
-        
-        <br>
-            <button class="buttonA" id="btn5" type="button">Change Password</button>
-            <br>
-            <br>
-        <button class="buttonA" id="btn4" type="button">Log Out</button>
-    </div>
-
-    <div id="rightBox">
-        <div class="leftPadding">
-            <h1>December 2022</h1>
-            <h3>Week 1</h3>
+        <div id="topBox">
+            <a href="/ciroc/employeepassword">Password Recovery</a>
+            <a href="/ciroc/employee/training">Training Videos</a>
+            <a href="/ciroc">Home Page</a>
         </div>
 
-        <a href="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"><img src="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80" alt="" width="400px" class="center"></a>
-    </div>
 
 
+        <div id="leftBox">
+            <a href="https://images.unsplash.com/photo-1554396133-3ff490ac1c6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"><img src="https://images.unsplash.com/photo-1554396133-3ff490ac1c6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" alt="" width="400px" class="center"></a>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="client.js"></script>
+            <hr>
+
+            <p><b>Name: <span id="#eName"></span></b></p>
+            <p><b>Email: <span id="#eEmail"></span></b></p>
+
+
+            <br>
+
+            <button class="buttonA" id="btn4" type="button">Log Out</button>
+        </div>
+
+
+        <div id="rightBox">
+            <div class="leftPadding">
+                <h1>December 2022</h1>
+                <h3>Week 1</h3>
+            </div>
+
+            <a href="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"><img src="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80" alt="" width="400px" class="center"></a>
+            <br>
+        </div>
+
+        <div id="footer">
+            <br>
+            <p style="font-size: 6pt;"> © 2022 Ciroc Hotel. Vancouver BC. All Rights Reserved</p> 
+        </div>
+    </div>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="client.js"></script>
     
 </body>
 </html>
