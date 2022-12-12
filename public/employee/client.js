@@ -26,8 +26,3 @@ btn4.addEventListener("click", function (){
     location.href = "/ciroc"
 
 })
-btn5.addEventListener("click", function (){
-
-    location.href = "/ciroc/employeepassword"
-
-})
